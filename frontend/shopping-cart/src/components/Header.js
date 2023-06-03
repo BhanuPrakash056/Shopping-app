@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Container, FormControl, Nav } from "react-bootstrap";
+import { Navbar, Container, FormControl } from "react-bootstrap";
 import { BiCart } from "react-icons/bi";
 class Header extends Component {
   render() {
@@ -15,7 +15,12 @@ class Header extends Component {
             ></FormControl>
           </Navbar.Text>
         </Container>
-        <BiCart color="white" fontSize="25px" alignRight></BiCart>
+        <BiCart
+          color="white"
+          fontSize="25px"
+          alignRight
+          className="me-5"
+        ></BiCart>
       </Navbar>
     );
   }
