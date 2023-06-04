@@ -1,8 +1,9 @@
 import express from "express";
 import cors from "cors";
-import router from "router";
+import router from "./router/router.js";
 import mongoose from "mongoose";
-const url = "mongodb+srv://bhanu:w5MrNXOh9vhrpl8s@cluster0.11tn785.mongodb.net/?retryWrites=true&w=majority"
+const url =
+  "mongodb+srv://bhanu:w5MrNXOh9vhrpl8s@cluster0.11tn785.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(url, {
     useNewUrlParser: true,
